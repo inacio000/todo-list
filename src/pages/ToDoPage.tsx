@@ -1,13 +1,31 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import TabBar from '../components/TabBar/TabBar';
 import TaskList from '../components/TaskList/TaskList';
 import styles from './Styles/style.module.scss'
+import { useDispatch } from 'react-redux';
+import { logout } from '../features/authSlice';
 
 const ToDoPage: React.FC = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    dispatch(logout());
+    navigate('/login');
+  };
+
   return (
     <div className={styles.ToDoPage}>
+      <div className={styles.headerContainer}>
+        <button
+          onClick={handleLogout}
+          className={styles.logoutButton}
+        >
+          Выйти
+        </button>
+      </div>
       <Header />
       <TabBar />
       <Routes>
