@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTask, Task } from '../../features/todoSlice';
+import { addTask, clearAllTasks, Task } from '../../features/todoSlice';
 import { MdClearAll } from "react-icons/md";
 import { FaPlus } from "react-icons/fa6";
 import styles from './header.module.scss'
@@ -24,8 +24,8 @@ const Header: React.FC = () => {
     setTaskText('');
   };
 
-  const handleClear = () => {
-    setTaskText('');
+  const handleClearAllTasks = () => {
+    dispatch(clearAllTasks());
   };
 
   return (
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
           <FaPlus /> ДОБАВИТЬ
         </button>
         <button
-          onClick={handleClear}
+          onClick={handleClearAllTasks}
           className={styles.clear}
         >
           ОЧИСТИТЬ <MdClearAll />
