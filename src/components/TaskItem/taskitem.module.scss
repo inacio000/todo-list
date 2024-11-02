@@ -1,0 +1,32 @@
+.taskItem {
+  width: 90%;
+  padding: .3rem .5rem;
+  border: 1px solid var(--french-gray);
+
+  border-radius: 0px 8px 0 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .taskActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: black;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+}

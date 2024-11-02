@@ -1,0 +1,29 @@
+.tabbar {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  text-align: center;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  background-color: #807a84;
+
+  a {
+    text-decoration: none;
+    color: var(--french-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  a.active {
+    border-bottom: 1px solid #007bff;
+    color: white;
+  }
+}
