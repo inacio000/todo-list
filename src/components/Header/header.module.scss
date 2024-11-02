@@ -46,7 +46,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // flex-direction: column;
 
         .second {
             display: none;
@@ -63,6 +62,10 @@
             .second {
                 display: flex;
             }
+        }
+
+        @media(max-width: 330px) {
+            flex-direction: column;
         }
 
     }
