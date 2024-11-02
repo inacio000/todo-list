@@ -30,7 +30,7 @@ const TaskList: React.FC<TaskListProps> = ({ filter }) => {
       {filteredTasks.length > 0 ? (
         filteredTasks.map((task) => <TaskItem key={task.id} task={task} />)
       ) : (
-        <p>Nenhuma tarefa encontrada.</p>
+        <p>Задачи не найдены.</p>
       )}
     </div>
   );
