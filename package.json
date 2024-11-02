@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-html && vite build tsc -b && vite build",
-    "generate-html": "mkdir -p dist && cp index.html dist/",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-html": "mkdir -p dist && cp index.html dist/"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
