@@ -23,9 +23,9 @@
 - Клонировать репозиторий
   > git clone https://github.com/inacio000/todo-list.git
 
-## Установить зависимости
+- Установить зависимости
   > npm start
-
+  
   > cd todo-list
-
+  
   > npm run dev
