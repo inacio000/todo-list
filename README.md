@@ -30,4 +30,4 @@
   
   > npm run dev
   
-### [🔗Нажмите здесь, чтобы просмотреть сайт]([https://inacio000.github.io/GitHub-User-Search/](https://todo-list-henna-delta.vercel.app/login))
+### [🔗Нажмите здесь, чтобы просмотреть сайт](https://todo-list-henna-delta.vercel.app/login)
