@@ -1,8 +1,6 @@
 <h1 align="center">To Do List</h1>
 
-<p align="center">Реализовать приложение To-do List.</p>
-
-# 🚀 Techs
+<p align="center">Реализовать приложение mobile responsive 🚀 Techs
 
 > - [React JS](https://reactjs.org/)
 > - [TypeScript](https://www.typescriptlang.org/)
@@ -16,10 +14,10 @@
   <img src="./public/login.png" alt="To-do List Project" width="100%">
 </div>
 
-<div align="center" style="display: flex; flex-diraction: row;">
+<!-- <div align="center" style="display: flex; flex-direction: row; justify-content: flex-start;">
   <img src="./public/mobile.png" alt="To-do List Project" width="50%" height="100%">
   <img src="./public/mobile2.png" alt="To-do List Project" width="50%" height="100%">
-</div>
+</div> -->
 
 # Запуск проекта
 - Клонировать репозиторий
