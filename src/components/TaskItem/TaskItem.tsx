@@ -36,9 +36,9 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
       {task.description && <p>{task.description}</p>}
 
       <div className={styles.taskActions}>
-        {!task.completed && (
-          <span onClick={handleComplete}>{task.completed ? <IoMdDoneAll /> : <MdDone />}</span>
-        )}
+        <span onClick={handleComplete}>
+          {task.completed ? <IoMdDoneAll /> : <MdDone />}
+        </span>
         <span onClick={handleDelete}><FaTrash /></span>
       </div>
     </div>
