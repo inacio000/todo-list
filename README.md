@@ -22,8 +22,6 @@
 # Запуск проекта
 - Клонировать репозиторий
   > git clone https://github.com/inacio000/todo-list.git
-- Install dependencies
-  > npm install
 
 ## Установить зависимости
   > npm start
