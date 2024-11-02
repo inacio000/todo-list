@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../features/authSlice';
 import { useNavigate } from 'react-router-dom';
+import styles from './Styles/style.module.scss'
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -20,7 +21,10 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className={styles.form}
+    >
       <input
         type="text"
         placeholder="Логин"
