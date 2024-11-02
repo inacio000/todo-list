@@ -16,7 +16,7 @@
   <img src="./public/login.png" alt="To-do List Project" width="100%">
 </div>
 
-<div align="center" style="display: flex;">
+<div align="center" style="display: flex; flex-diraction: row;">
   <img src="./public/mobile.png" alt="To-do List Project" width="50%" height="100%">
   <img src="./public/mobile2.png" alt="To-do List Project" width="50%" height="100%">
 </div>
