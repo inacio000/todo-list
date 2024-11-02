@@ -15,11 +15,16 @@ const Header: React.FC = () => {
     const newTask: Task = {
       id: Date.now().toString(),
       title: taskText,
+      description: taskText,
       completed: false,
       deleted: false,
     };
 
     dispatch(addTask(newTask));
+    setTaskText('');
+  };
+
+  const handleClear = () => {
     setTaskText('');
   };
 
@@ -45,7 +50,7 @@ const Header: React.FC = () => {
           <FaPlus /> ДОБАВИТЬ
         </button>
         <button
-          onClick={handleAddTask}
+          onClick={handleClear}
           className={styles.clear}
         >
           ОЧИСТИТЬ <MdClearAll />
