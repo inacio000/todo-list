@@ -14,6 +14,11 @@
   <img src="./public/login.png" alt="To-do List Project" width="100%">
 </div>
 
+## Логин
+* admin
+## Пороль
+* admin
+#
 <!-- <div align="center" style="display: flex; flex-direction: row; justify-content: flex-start;">
   <img src="./public/mobile.png" alt="To-do List Project" width="50%" height="100%">
   <img src="./public/mobile2.png" alt="To-do List Project" width="50%" height="100%">
