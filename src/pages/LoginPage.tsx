@@ -1,30 +1,32 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { login } from '../features/authSlice';
-import { useNavigate } from 'react-router-dom';
-import styles from './Styles/style.module.scss'
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { login } from "../features/authSlice";
+import { useNavigate } from "react-router-dom";
+import styles from "./Styles/style.module.scss";
 
 const LoginPage: React.FC = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === 'admin' && password === 'admin') {
+    if (username === "admin" && password === "admin") {
       dispatch(login());
-      navigate('/todo');
+      navigate("/todo");
     } else {
-      alert('Incorrect username or password');
+      alert("Incorrect username or password");
     }
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={styles.form}
-    >
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <div className="palpite">
+        <p>
+          Use "<strong>admin</strong>" for both inputs
+        </p>
+      </div>
       <input
         type="text"
         placeholder="Логин"

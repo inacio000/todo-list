@@ -1,73 +1,76 @@
 .headerContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
 .logoutButton {
-    padding: 0.5rem 1rem;
-    background-color: var(--redwood);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: var(--redwood);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 
-    &:hover {
-        opacity: 0.9;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .ToDoPage {
-    max-width: 900PX;
-    min-height: 90vh;
-    margin: 0 AUTO;
-    padding: 2rem;
-    color: #fff;
+  max-width: 900px;
+  min-height: 90vh;
+  margin: 0 AUTO;
+  padding: 2rem;
+  color: #fff;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-    input {
-        width: auto;
-        padding: 0.8rem;
-        background-color: transparent;
-        color: #fff;
-        text-align: start;
+  p {
+    color: #fff;
+  }
 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid var(--jet-black);
+  input {
+    width: auto;
+    padding: 0.8rem;
+    background-color: transparent;
+    color: #fff;
+    text-align: start;
 
-        font-size: 1rem;
-        outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--jet-black);
 
-        &::placeholder {
-            color: var(--french-gray);
-        }
+    font-size: 1rem;
+    outline: none;
+
+    &::placeholder {
+      color: var(--french-gray);
     }
+  }
 
-    button {
-        width: auto;
-        gap: .5rem;
-        padding: 0.5rem 1.5rem;
-        border: none;
-        background-color: var(--jet-black);
-        border-radius: 5px;
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-
-    }
+  button {
+    width: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: var(--jet-black);
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
 }
