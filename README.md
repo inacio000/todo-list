@@ -29,7 +29,7 @@
   > git clone https://github.com/inacio000/todo-list.git
 
 - Установить зависимости
-  > npm start
+  > npm install
   
   > cd todo-list
   
